@@ -50,3 +50,12 @@ body{
 .btn-ghost{background:transparent;color:var(--brand);border:1px solid var(--brand-weak);}
 
 /*=====Ligntbox shell(共通ベース、詳細は各コンポーネントCSSで）*/
+.Ib[aria-hidden="true"]{display: none;}
+.Ib{
+    position: fixed; inset:0;z-index: 50;
+    background:#000;border-radius: var(--radius);overflow: hidden;
+}
+.Ib-close{
+    position:fixed;top:14px;right:14px;width: 44px;height: 44px;
+    border-radius: 50px; border:0;background: #fff;color:#111;font-size: 26px; cursor:pointer;
+}
