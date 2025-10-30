@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>画像・動画ギャラリー</title>
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/gallery.css" />
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">画像・動画ギャラリー</h1>
+        <p class="muted">画像カードをクリックすると拡大/再生します。</p>
+
+            <section id="gallery" class="grid gallery">
+            <!-- 画像カード -->
+            <a class="card hover-rise" href="../assets/media/img/sea_morning.jpg" data-type="image">
+                <div class="card-thumb" src="../assets/media/img/sea_morning.jpg" alt="海辺の朝" loading="lazy" />
+                <div class="card-body"><h2 class="card-title">海辺の朝</h2></div>
+            </a>
+            <!--　動画カード -->
+            <a class="card hover-rise" href="../assets/media/video/sea_foot.mp4" data-type="video" data-poster="../assets/media/img/poster_01.jpg">
+                <img class="card-thumb" src="../assets/media/img/sea_foot.jpg" alt="海辺を歩く" loading="lazy /">
+                <div class="card-body"><h2 class="card-title">海辺を歩く</h2></div>
+            </a>
+            <!-- 以降、あとで追加 -->
+        </section>
+
+        <p style="margin-top: 16px"><a class="btn btn-ghost" href="../"←Day2 メニューへ戻る</a></p>
+            </main>
+        
+        <!-- ライトボックス -->
+         <div id="lightbox" class="Ib" aria-hidden="true">
+            <button id="IbClose" class="Ib-Close" aria-label="閉じる">×</button>
+            <div id="IbInner" class="Ib-inner" role="dialog" aria-modal="true"></div>
+         </div>
