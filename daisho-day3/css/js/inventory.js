@@ -34,14 +34,15 @@ function render(){
 
 
 function changeStock(id,diff){
-    const item=items.find(i=>i,id ===id);
+    const item=items.find(i=>i,id === id);
     if (!item){
         return;
     }
     
     item.stock+=diff;
+    
     if(item.stock<0) {
-        item.stock=0
+        item.stock=0;
     }
     
     render();
