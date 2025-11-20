@@ -10,7 +10,7 @@ const tbody =document.getElementById("item-list");
 function render(){
     tbody.innerHTML ="";
     
-    items.forEach(item => {
+    item.forEach(item => {
         const tr =document.createElement("tr");
 
         if(item.stock < item.minStock){
